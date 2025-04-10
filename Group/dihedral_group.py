@@ -26,6 +26,11 @@ class Dihedral:
             return "e"
         return self.string
 
+    def __repr__(self):
+        if self.string == "":
+            return "e"
+        return self.string
+
     def __eq__(self, other):
         if isinstance(other, Dihedral):
             if self.n != other.n:
