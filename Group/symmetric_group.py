@@ -16,6 +16,15 @@ class Sym:
         if string == "":
             string = "e"
         return string
+
+    def __repr__(self):
+        string = ""
+        for item in self.list:
+            if len(item) != 1:
+                string += str(item)
+        if string == "":
+            string = "e"
+        return string
     
     def __eq__(self, other):
         if isinstance(other, Sym):
